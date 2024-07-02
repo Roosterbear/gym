@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial;
+  /* HACK REMs */
+  font-size: 62.5%;
+}
+
+img{
+  max-width: 100%;
+  /* This fix the gap between img and link */
+  display: block;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+  font-family: 'Raleway';
+}
+
+.contenedor{
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.categorias h2{
+  text-align: center;
+  margin: 20px;
+  font-family: 'Playfair Display';
+  font-size: 2rem;
+}
+
+.categoria a{
+  text-align: center;
+  /* display: block Permite centrar el elemento */
+  /* Por default es inline-block y no permite centrar */
+  display: block;
+  padding: 20px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.categoria a:hover{
+  background-color: #037bc0;
+  color: #fff;
+}
+
+.listado-categorias{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
