@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: Arial;
+  font-family: 'Raleway';
   /* HACK REMs */
   font-size: 62.5%;
 }
@@ -54,4 +54,40 @@ a{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.sobre-nosotros{
+  background-image: linear-gradient(to right, 
+                    /* Transparent to see the image */  
+                    transparent 60%, 
+                    /* From 60%, CUT (No gradient) and show color */  
+                    #037bc0 60%, 
+                    /* End of color */
+                    #037bc0 100%), 
+                    url(img/nosotros.jpg);
+  /* Position of Text */
+  background-position: left center;
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-size: 100%, 60rem;  
+}
+
+.sobre-nosotros-grid{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.texto-nosotros{
+  flex-basis: 50%;
+  padding-left: 13rem;
+  color: #fff;
+}
+
+.texto-nosotros h2{
+  font-family: 'Playfair Display';
+}
+
+.gap{
+  height:5rem;
+  display: block;
 }
