@@ -1,0 +1,25 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  /* CENTRAR EN COLUMNA */
+  align-items: center;
+}
+
+figure{
+  width: 300px;
+}
+
+img{
+  /* SIN ESTO NO FUNCIONA EL WIDTH DEL PADRE */
+  max-width: 100%;  
+  /* ESTE CODIGO NO SE BIEN PARA QUE SIRVE PERO LO VOY A RESPALDAR */
+  display: block;
+  object-fit: cover;
+}
+
