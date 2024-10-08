@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// Uso de constantes
 const float FREEZE = 32.0;          //Freezing Point of Water (Farenheit)
 const float BOIL = 212.0;           //Boiling Point of Water (Farenheit)
 
