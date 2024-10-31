@@ -1,33 +1,15 @@
-import React from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom/client'
+import {Button} from 'react-bootstrap'
 
-
-const Fruta = (props)=>{
-  const estilo = {    
-    marginBottom: '1em',
-    padding: '12px',
-    borderRadius: '0.3em',
-    backgroundColor: '#ffb000'
-    
+class App extends Component{
+  render(){
+    return(
+      <div>
+        <Button variant="danger">Default</Button>
+      </div>
+    )
   }
-
-  
-  return (    
-    <>
-      <h1 style={estilo}>{props.name}</h1>
-      <h2>Cantidad: {props.cantidad}</h2>
-      <hr/>
-    </>
-  )
-}
-
-const App = ()=>{
-  return (
-  <div>
-    <Fruta name={"Higo"} />
-    <Fruta name={"Mamey"} />
-    <Fruta name={"Kiwi"} />
-  </div>)
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
